@@ -2,26 +2,447 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.Parentheader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Childheader{
+  color: black;
+  gap: 2vw;
+  z-index: 100;
+  font-size: 1vw;
+  margin-top: 5vh;
+  margin-left:70vw;
+  font-weight: 860;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Parent{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.Child{
+display: flex;
+height: 100%;
+width: 100%;
+}
+.tourimage{
+ margin-top: -10.4vh;
+  display: flex;
+  position: absolute;
+
+}
+.Childheader button{
+  background-color: red;
+  padding: 1vh 1vh;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 10vw;
+  margin-right: 10vw;
+}
+.Heading{
+  display: flex;
+  position: absolute;
+  margin-top: 70vh;
+  font-size: 5vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+}
+.Parentblocks{
+  cursor: context-menu;
+  margin-left: 1vw;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-top: 600px;
+}
+.card{
+  width: 325px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 20px;
+  transition: 0.1s ease;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+.card Image{
+  width: 100%;
+  height: auto; 
+}
+.cardcontent{
+  padding: 16px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.cardcontent h3{
+  font-size: 28px;
+  font-weight: 550;
+  margin-bottom: 8px;
+}
+.cardcontent p{
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.cardcontent .btn{
+display: inline-block;
+padding: 8px 16px;
+background-color: #333;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color: #fff;
+transition: 0.1s ease;
+}
+.cardcontent .btn:hover{
+  transform: translateY(-5px);
+  background-color: red;
+}
+.ParentService{
+  margin-left: 0;
+  cursor: context-menu;
+  display: flex;
+  margin-top: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servicecontent{
+  width: 325px;
+  padding: 40px 16px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  margin: 20px;
+  transition: 0.1s ease;
+}
+.servicecontent:hover{
+  transform: translateY(-10px);
+}
+.servicecontent h2{
+  font-size: 27px;
+  margin-left: 75px;
+  font-weight: 600;
+}
+
+.servicecontent h3{
+  font-size: 27px;
+  margin-left: 90px;
+  font-weight: 600;
+}
+.servicecontent h4{
+  font-size: 27px;
+  margin-left: 95px;
+  font-weight: 600;
+}
+.servicecontent p{
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+}
+.plane{
+  margin-left: 130px;
+  margin-top: -25px;
+  color: orangered;
+  font-size: 35px;
+}
+.Heading2{
+  position: absolute;
+  display: flex;
+  font-size: 60px;
+  font-weight: 600;
+  margin-left:  0;
+  justify-content: center;
+  align-items: center;
+  margin-top: -250px;
+}
+.ParentContact{
+  display: flex;
+  width: 100%;
+  height: 630px;
+}
+.ChildContact{
+  width: 100%;
+}
+.ChildContact .name{
+  background-color: black;
+  margin-left: 35vw;
+  padding:1vh 1vh;
+  width: 15vw;
+  border-radius: 1vw;
+  margin-top: 5vh;
+}
+.ChildContact h1{
+  margin-top: 10vh;
+  font-size: 5vw;
+  font-weight: 600;
+  margin-left: 38vw;
+}
+.email{
+  background-color: black;
+  margin-left: 1vw;
+  width: 15vw;
+  padding: 1vh 1vh;
+  border-radius: 1vw;
+}
+.phone{
+  background-color: black;
+  border-radius: 1vw;
+  padding: 1vh 1vh;
+  width: 15vw;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+.location{
+  background-color: black;
+  margin-left: 1vw;
+  padding: 1vh 1vh;
+  width: 15vw;
+  border-radius: 1vw;
+}
+.company{
+  background-color: black;
+  margin-top: 5vh;
+  width: 31vw;
+  padding: 1vh 1vh;
+  border-radius: 1vw;
+  margin-left: 35vw;
+}
+.AboutUr{
+  background-color: black;
+  margin-left: 35vw;
+  margin-top: 5vh;
+  width: 31vw;
+  height: 20vh;
+  border-radius: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 12vh;
+}
+.submit{
+  margin-top: 5vh;
+  background-color: red;
+  margin-left: 35vw;
+  width: 8.3vw;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+  padding: 1.5vh 1.5vh;
+  color: black;
+  transition: 0.1s ease;
+}
+.submit:hover{
+  transform: translateY(-5px);
+  background-color: blue;
+}
+.Parentfooter{
+  display: flex;
+  width: 100%;
+  background-color: black;
+  height: 150px;
+  color: white;
+}
+.Childfooter{
+  width: 100%;
+}
+.Childfooter .websiteurl{
+  display: flex;
+margin-left: 42vw;
+font-size: 1.5vw;
+margin-top: 3vh;
+font-weight: 500;
+}
+.Childfooter .Footerul{
+  display: flex;
+  margin-left: 40.4vw;
+  margin-top: 3vh;
+  font-weight: 500;
+  color: gray;
+  font-size: 1vw;
+  gap: 2vw;
+}
+.icons{
+  display: flex;
+  font-size: 2vw;
+  margin-top: 3vh;
+  margin-left: 47.3vw;
+}
+.Childfooter .paragraph{
+  font-size: 1vw;
+  color: lightgray;
+  margin-left: 33.5vw;
+}
+.Childfooter .paragraph span{
+  color: red;
+  font-weight: 600;
+}
+@media (max-width:480px){
+  .tourimage{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    margin-top: -130vh;
+  }
+  .Child{
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .Heading{
+    display: inline;
+    margin-top: -45vh;
+    font-size: 6.5vw;
+    margin-left: 5vw;
+    white-space: nowrap;
+  }
+  .submit{
+    width: 12.7vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
+  .servicecontent h2{
+    margin-left: 16.5vw;
+  }
+  .plane{
+    margin-left: 28vw;
+  }
+  .servicecontent h3{
+    margin-left: 19.5vw;
+  }
+  .servicecontent h4{
+    margin-left: 20.5vw;
+  }
+  .Heading2{
+    font-size: 10vw;
+  }
+  .Childheader button{
+    white-space: nowrap;
+  }
+}
+
+@media (min-width:481px) and (max-width:768px){
+  
+  .tourimage{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-top: -10vh;
+  }
+  .Child{
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .Heading{
+    display: inline;
+    margin-top: 50vh;
+    font-size: 6.5vw;
+    margin-left: 5vw;
+    white-space: nowrap;
+  }
+  .Parentfooter{
+    margin-top: 20vh;
+  }
+  .submit{
+    width: 11vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
+}
+@media (min-width:769px) and (max-width:1024px){
+  
+  .tourimage{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-top: -10vh;
+  }
+  .Child{
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .Heading{
+    
+    margin-top: 40vh;
+    font-size: 6.5vw;
+    margin-left: 5vw;
+    white-space: nowrap;
+  }
+  
+  .Parentfooter{
+    margin-top: 30vh;
+  }
+  .submit{
+    width: 11vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1280px){
+  
+  .tourimage{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-top: -10vh;
+  }
+  .Child{
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .Heading{
+    
+    margin-top: 40vh;
+    font-size: 6.5vw;
+    margin-left: 5vw;
+    white-space: nowrap;
+  }
+  
+  .Parentfooter{
+    margin-top: 30vh;
+  height: 170px;
+  }
+  .submit{
+    width: 9.7vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
   }
 }
