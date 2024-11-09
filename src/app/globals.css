@@ -76,21 +76,13 @@ width: 100%;
   width: 10vw;
   margin-right: 10vw;
 }
-.Heading{
-  display: flex;
-  position: absolute;
-  margin-top: 70vh;
-  font-size: 5vw;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bolder;
-}
 .Parentblocks{
   cursor: context-menu;
   margin-left: 1vw;
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
- margin-top: 600px;
+ margin-top: 450px;
 }
 .card{
   width: 325px;
@@ -323,13 +315,6 @@ font-weight: 500;
     display: inline;
     flex-wrap: wrap;
   }
-  .Heading{
-    display: inline;
-    margin-top: -26vh;
-    font-size: 4vw;
-    margin-left: 20vw;
-    white-space: nowrap;
-  }
   .submit{
     width: 15vw;
     font-size: 1.5vw;
@@ -346,9 +331,6 @@ font-weight: 500;
   }
   .servicecontent h4{
     margin-left: 20.5vw;
-  }
-  .Heading2{
-    font-size: 10vw;
   }
   .Parentfooter{
     margin-top: 10vh;
@@ -371,13 +353,6 @@ font-weight: 500;
     display: inline;
     flex-wrap: wrap;
   }
-  .Heading{
-    display: inline;
-    margin-top: 50vh;
-    font-size: 6.5vw;
-    margin-left: 5vw;
-    white-space: nowrap;
-  }
   .Parentfooter{
     margin-top: 20vh;
   }
@@ -399,13 +374,6 @@ font-weight: 500;
   .Child{
     display: inline;
     flex-wrap: wrap;
-  }
-  .Heading{
-    
-    margin-top: 40vh;
-    font-size: 6.5vw;
-    margin-left: 5vw;
-    white-space: nowrap;
   }
   
   .Parentfooter{
@@ -430,13 +398,6 @@ font-weight: 500;
   .Child{
     display: inline;
     flex-wrap: wrap;
-  }
-  .Heading{
-    
-    margin-top: 40vh;
-    font-size: 6.5vw;
-    margin-left: 5vw;
-    white-space: nowrap;
   }
   
   .Parentfooter{
