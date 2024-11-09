@@ -193,6 +193,7 @@ transition: 0.1s ease;
 }
 .ChildContact{
   width: 100%;
+  color: white;
 }
 .ChildContact .name{
   background-color: black;
@@ -381,7 +382,7 @@ font-weight: 500;
     height: 250px;
   }
   .submit{
-    width: 11vw;
+    width: 12.3vw;
     font-size: 1.5vw;
     white-space: nowrap;
   }
