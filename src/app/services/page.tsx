@@ -31,7 +31,6 @@ export default function Services(){
             </h4>
             <p>At our travel agency, we are committed to delivering exceptional quality in every aspect of your journey. From the finest flights and handpicked accommodations to personalized customer service, we ensure your travel experience is nothing short of outstanding. Our attention to detail and dedication to excellence make every trip memorable and stress-free.</p>
            </div>
-           <div className="Heading2">Our Services</div>
         </div>
     )
 }
