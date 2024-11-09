@@ -325,13 +325,13 @@ font-weight: 500;
   }
   .Heading{
     display: inline;
-    margin-top: -45vh;
-    font-size: 6.5vw;
-    margin-left: 5vw;
+    margin-top: -26vh;
+    font-size: 4vw;
+    margin-left: 20vw;
     white-space: nowrap;
   }
   .submit{
-    width: 12.7vw;
+    width: 15vw;
     font-size: 1.5vw;
     white-space: nowrap;
   }
@@ -349,6 +349,9 @@ font-weight: 500;
   }
   .Heading2{
     font-size: 10vw;
+  }
+  .Parentfooter{
+    margin-top: 10vh;
   }
   .Childheader button{
     white-space: nowrap;
