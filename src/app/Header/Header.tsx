@@ -1,4 +1,4 @@
-import { LuMenu, LuMenuSquare } from "react-icons/lu";
+import { LuMenuSquare } from "react-icons/lu";
 export default function Header(){
     return(
         <div className="Parentheader">
