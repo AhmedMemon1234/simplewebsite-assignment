@@ -311,7 +311,6 @@ font-weight: 500;
     margin-top: 0vh;
   }
   .Parentheader{
-    position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
